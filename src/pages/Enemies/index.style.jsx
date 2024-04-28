@@ -1,0 +1,102 @@
+import styled from "styled-components";
+import { fadeIn } from "../../animations";
+import { devices } from "../../js/Breakpoints";
+
+export const Body_Enemies = styled.div`
+animation: ${fadeIn} 1s ease-in;
+
+width: 100%;
+height: 130vh;
+cursor: default;
+
+border-bottom: 1px solid #000000;
+
+.parallax{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(6px);
+}
+.contents-container{
+    position: absolute;
+    
+    height: 100%;
+    margin-top: 2rem;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    .title,.subTitle{margin: 0;}
+    .title{font-size: 2.4rem;}
+    h2{margin: 0;}
+    strong{font-size: 1.2rem;}
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.6rem;
+}
+.enemies-card{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+    @media ${devices.md}{
+        height: 100vh;
+        .header-container{
+            .title{font-size: 1.8rem;}
+            h2{font-size:1.6rem;}
+            .description{font-size:1rem;}
+            .subTitle{font-size:1.4rem}
+        }
+        .contents{
+            display: flex;
+            height: 100%;
+            overflow-y: auto;
+            justify-content: initial;
+        }
+        .card-container{
+            flex-direction: column;
+            
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            ::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            }
+        }
+    }
+
+    @media ${devices.sm}{
+        .header-container{
+            .title{font-size: 1.6rem;}
+            h2{font-size:1.4rem;}
+            .description{font-size:1rem;}
+            .subTitle{font-size:1.2rem}
+        }
+        .enemies-card{
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+        }
+    }
+
+;`

@@ -1,0 +1,48 @@
+{
+  "translation": {
+    "navbar": {
+      "the_game": "O JOGO",
+      "news": "NOTÍCIAS",
+      "screenshots": "CAPTURAS",
+      "enemies": "INIMIGOS",
+      "store": "LOJA",
+      "community": "COMUNIDADE",
+      "btn_title": "COMPRE JÁ",
+      "btn_subtitle": "ALFA DISPONÍVEL AGORA"
+    },
+    "footer": {
+      "copy": "75Horas IMMINENT DANGER {{year}}. Todos os direitos reservados"
+    },
+    "the_game": {
+      "comming_soon_on": "Em breve em",
+      "powered_by": "Motorizado pela"
+    },
+    "news": {
+      "featured_news": "NOTÍCIAS EM DESTAQUE",
+      "updates": "ATUALIZAÇÕES",
+      "twitter_broadcast": "TRANSMISSÃO PELO TWITTER",
+      "btn_title": "VISITE NOSSO"
+    },
+    "screenshots": {
+      "page_title": "CAPTURAS"
+    },
+    "enemies": {
+      "page_title": "INIMIGOS",
+      "title": "Você não está sozinho",
+      "description": "Os animais podem ser tão úteis como perigosos. Também vais conhecer outros seres humanos, que também tentam melhorar a sua vida. Alguns podem ser mais fortes do que pensas.",
+      "subtitle": "De aço ou de carne, escolha o seu adversário com sabedoria",
+      "cards": {
+        "first": "Estar alerta a qualquer momento pode significar encontrar armas abandonadas.",
+        "second": "Casas abandonada, servem de abrigo para Zumbis e animais selvagens.",
+        "third": "À medida que a noite cai, tudo fica mais hostil, animais predadores costumam sair à noite.",
+        "fourth": "Estar alerta a qualquer momento pode significar encontrar armas abandonadas."
+      }
+    },
+    "store": {
+      "title": "MERCADORIA",
+      "description": "Descubra o merchandise oficial do DayZ: T-shirts, sweatshirts com capuz e muito mais",
+      "btn_title": "LOJA"
+    },
+    "community": {}
+  }
+}

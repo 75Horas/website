@@ -1,0 +1,16 @@
+#root {
+  width: 100%;
+  max-height: 100vh;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  scroll-snap-align: start;
+}
+
+.pages-container {
+  overflow-y: auto;
+  scrollbar-width: none;
+  scroll-snap-type: y proximity;
+}

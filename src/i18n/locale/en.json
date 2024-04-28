@@ -1,0 +1,48 @@
+{
+  "translation": {
+    "navbar": {
+      "the_game": "THE GAME",
+      "news": "NEWS",
+      "screenshots": "SCREENSHOTS",
+      "enemies": "ENEMIES",
+      "store": "STORE",
+      "community": "COMMUNITY",
+      "btn_title": "PREORDER NOW",
+      "btn_subtitle": "ALPHA AVALIABLE NOW"
+    },
+    "footer": {
+      "copy": "75Horas IMMINENT DANGER {{year}}. All rights reserved"
+    },
+    "the_game": {
+      "comming_soon_on": "Comming soon on",
+      "powered_by": "Powered by"
+    },
+    "news": {
+      "featured_news": "FEATURED NEWS",
+      "updates": "UPDATES",
+      "twitter_broadcast": "TWITTER BROADCAST",
+      "btn_title": "VISIT OUR"
+    },
+    "screenshots": {
+      "page_title": "SCREENSHOTS"
+    },
+    "enemies": {
+      "page_title": "ENEMIES",
+      "title": "You are not alone",
+      "description": "Animals can be as helpful as dangerous. You will meet other humans too, who also try to make their way a better life. Some may be stronger than you think.",
+      "subtitle": "Made of steel or made flesh, choose your opponet wisley",
+      "cards": {
+        "first": "Being alert at all times could mean finding abandoned weapons.",
+        "second": "Abandoned houses serve as shelters for zombies and wild animals.",
+        "third": "As night falls, everything becomes more hostile, predatory animals often come out at night.",
+        "fourth": "Being alert at all times could mean finding abandoned weapons."
+      }
+    },
+    "store": {
+      "title": "MERCHANDISE",
+      "description": "Discover the official DayZ merchandise: T-shirts, hoodies and more",
+      "btn_title": "STORE"
+    },
+    "community": {}
+  }
+}

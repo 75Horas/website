@@ -1,0 +1,8 @@
+body {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 1);
+}
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
