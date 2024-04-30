@@ -16,6 +16,9 @@ import { changeLanguage } from 'i18next';
 
 import "./i18n/i18n"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Contact } from './pages/Contact';
+import song from "/audio/song.mp3"
+import { Collaborators } from './pages/Collaborators';
 
 function App() {
   const [isloading, setIsLoading] = useState(true);
@@ -43,26 +46,37 @@ function App() {
     setCurrentLanguage(newLanguage);
   }
 
+  const [playing, setPlaying] = useState(true);
+  const [audio] = useState(new Audio(song));
+
+  const handleToggleSong = () => {
+    setPlaying(!playing)
+    audio.volume = 0.075
+    audio.loop = true
+    playing === true ? audio.play() : audio.pause()
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-    const timeout = setTimeout(() => {
-      setIsLoading(false)
-    }, 2000)
 
-    return () => clearTimeout(timeout) + window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <ParallaxProvider>
       <Container fluid>
         {isloading ? (
-          <Loading />
+          <Loading setIsLoading={setIsLoading} handleToggleSong={handleToggleSong} isloading={isloading} />
         ) :
           (
             <Container fluid className='pages-container'>
 
-              <NavBar handleLanguage={handleChangeLanguage} language={currentLanguage} />
+              <NavBar
+                handleLanguage={handleChangeLanguage}
+                language={currentLanguage}
+                handleToggleSong={handleToggleSong}
+                playing={playing}
+              />
               <ScrollIndicator id={pageId} />
               <section>
                 <Home />
@@ -81,6 +95,12 @@ function App() {
               </section>
               <section>
                 <Community />
+              </section>
+              <section>
+                <Collaborators />
+              </section>
+              <section>
+                <Contact />
               </section>
               <section>
                 <Footer />

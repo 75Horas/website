@@ -17,12 +17,12 @@ export function Updates() {
     useEffect(() => {
         const fetchUpdates = async () => {
             try {
-                const response = await axios.get("http://75hid-api-production.up.railway.app/updates");
+                const response = await axios.get("https://75hid-api-production.up.railway.app/updates");
                 const data = await response.data
 
                 data.forEach(update => {
-                    update.bannerData = update.banner;
-                    delete update.banner;
+                    // update.bannerData = update.banner;
+                    // delete update.banner;
                 });
                 setUpdates(data);
                 setLatestUpdates(data[0])
@@ -32,7 +32,7 @@ export function Updates() {
         };
         fetchUpdates();
     }, []);
-    
+
     return (
         <Body_Updates id="news">
             <ParallaxBanner className="parallax">

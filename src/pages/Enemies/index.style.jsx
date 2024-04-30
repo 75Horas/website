@@ -27,13 +27,14 @@ border-bottom: 1px solid #000000;
     position: absolute;
     
     height: 100%;
-    margin-top: 2rem;
 }
 .contents{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    padding: 2rem 0;
 }
 .header-container{
     display: flex;

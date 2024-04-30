@@ -1,4 +1,3 @@
-import { postUpdates } from "./firebase";
 import socialData from "../jsons/socialMedia.json"
 
 export function handleScrollPage(sectionId) {

@@ -9,9 +9,9 @@ margin: 0;
     display: flex;
     flex-direction: column;
     padding: 0;
-    justify-content: center;
+    /* justify-content: center; */
     
-    max-width: 416px;
+    max-width: 398px;
     width: 100%;
     height: 100%;
 
@@ -20,6 +20,7 @@ margin: 0;
 .banner-container{
     width: 100%;
     height: 100%;
+    /* max-height: 320px; */
     padding: 0;
 }
 .enemies-banner{

@@ -3,7 +3,7 @@ import thumbnail from '/assets/images/thumbnails/store_thumbnail.webp'
 import { devices } from "../../js/Breakpoints";
 
 export const Body_Store = styled.div`
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -55,7 +55,7 @@ export const Body_Store = styled.div`
     @media ${devices.sm}{
         .title{font-size: 1.6rem;}
         .description{font-size: 1.2rem;}
-        height: 80vh;
+        /* height: 80vh; */
     }
     @media ${devices.xs}{
         .title{font-size: 1.4rem;}

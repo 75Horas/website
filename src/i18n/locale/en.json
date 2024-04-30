@@ -6,6 +6,8 @@
       "screenshots": "SCREENSHOTS",
       "enemies": "ENEMIES",
       "store": "STORE",
+      "contact": "CONTACT",
+      "collaborators": "COLLABORATORS",
       "community": "COMMUNITY",
       "btn_title": "PREORDER NOW",
       "btn_subtitle": "ALPHA AVALIABLE NOW"
@@ -35,7 +37,7 @@
         "first": "Being alert at all times could mean finding abandoned weapons.",
         "second": "Abandoned houses serve as shelters for zombies and wild animals.",
         "third": "As night falls, everything becomes more hostile, predatory animals often come out at night.",
-        "fourth": "Being alert at all times could mean finding abandoned weapons."
+        "fourth": "The environmental variation between these regions was so significant that we observed marked climatic changes, such as more frequent sandstorms, lower temperatures in the southern region and even snowfall. All these events had an impact on the local flora."
       }
     },
     "store": {

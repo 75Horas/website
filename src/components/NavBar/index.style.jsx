@@ -28,11 +28,9 @@ export const Body_NavBar = styled.div`
     }
     .language-container{
         display: flex;
-        /* flex-direction: column; */
         justify-content: center;
         align-items: center;
 
-        margin-right: 1rem;
         gap: 2px;
         font-size: 12px;
         line-height: 0;
@@ -40,7 +38,11 @@ export const Body_NavBar = styled.div`
         color: rgba(255, 255, 255, 0.87);
         transition: color 0.5s;
     }
-    .language-container:hover{
+    .song-container{
+        color: rgba(255, 255, 255, 0.87);
+        margin-right: 1rem;
+    }
+    .language-container:hover, .song-container:hover{
         color: #9EC8B9;
     }
 

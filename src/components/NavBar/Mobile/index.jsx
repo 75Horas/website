@@ -3,6 +3,7 @@ import { Body_NavBarMobile } from "./index.style";
 
 import { IoLogoTiktok, IoLanguage } from "react-icons/io5";
 import { FaDiscord, FaXTwitter, FaInstagram, FaReddit, FaYoutube } from "react-icons/fa6";
+import { HiOutlineSpeakerWave, HiOutlineSpeakerXMark } from "react-icons/hi2";
 
 import logo from "/assets/icons/logo.webp";
 import logo02 from "/assets/icons/logo_white_02.webp";
@@ -66,6 +67,8 @@ export function NavBarMobile(props) {
                     <a className="link" onClick={() => handleScrollPage("screenshots")}>{t('navbar.screenshots')}</a>
                     <a className="link" onClick={() => handleScrollPage("enemies")}>{t('navbar.enemies')}</a>
                     <a className="link" onClick={() => handleScrollPage("store")}>{t('navbar.store')}</a>
+                    <a className="link" onClick={() => handleScrollPage("contact")}>{t('navbar.contact')}</a>
+                    <a className="link" onClick={() => handleScrollPage("collaborators")}>{t('navbar.collaborators')}</a>
                     <a className="link" onClick={() => handleScrollPage("community")}>{t('navbar.community')}</a>
 
                     <Container className="button-container">
@@ -104,9 +107,14 @@ export function NavBarMobile(props) {
                             onClick={() => { handleOpenWebsite("youtube") }}
                         />
                     </Container>
-                    <div className="language-container" onClick={() => { props.handleLanguage() }}>
-                        <IoLanguage size={28} />
-                        {props.language === "en" ? "EN" : "PT"}
+                    <div className="handles-container">
+                        <div className="language-container" onClick={() => { props.handleLanguage() }}>
+                            <IoLanguage size={28} />
+                            {props.language === "en" ? "EN" : "PT"}
+                        </div>
+                        <div className="song-container" onClick={() => { props.handleToggleSong() }}>
+                            {!props.playing ? (<HiOutlineSpeakerWave size={28} />) : (<HiOutlineSpeakerXMark size={28} />)}
+                        </div>
                     </div>
                 </Container>
 

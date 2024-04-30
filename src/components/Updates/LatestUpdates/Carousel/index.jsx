@@ -11,8 +11,8 @@ function LatestUpdatesCarusel({ updates }) {
                         <div className="banner-container">
                             <Image
                                 className="update-banner"
-                                src={update.banner}
-                                alt={update.banner}
+                                src={update.banner ? update.banner : ""}
+                                alt={update.banner ? update.banner : ""}
                                 loading="lazy"
                                 draggable={false}
                             />

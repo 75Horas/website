@@ -4,7 +4,7 @@ import { Body_LatestUpdateCard } from "./index.style";
 import { useTranslation } from "react-i18next";
 
 export function LatestUpdateCard({ latestUpdate, updates }) {
-    if (!updates) return null;
+    if (!updates || !latestUpdate) return null;
     const { t } = useTranslation();
 
     const handleOpenTwitter = (url) => {
@@ -17,7 +17,7 @@ export function LatestUpdateCard({ latestUpdate, updates }) {
         <Body_LatestUpdateCard>
             <Container fluid className="latest-updates-container">
                 <div className="latest-updates-tag">{t('news.featured_news')}</div>
-                <div className="latest-updates-banner-container" onClick={() => handleOpenTwitter(latestUpdate.url)}>
+                <div className="latest-updates-banner-container" onClick={() => handleOpenTwitter(latestUpdate.url ? latestUpdate.url : "")}>
                     <Image
                         className="latest-update-banner"
                         src={latestUpdate.banner ? latestUpdate.banner : ""}

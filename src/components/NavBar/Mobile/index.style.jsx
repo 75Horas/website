@@ -113,6 +113,12 @@ export const Body_NavBarMobile = styled.div`
                 cursor: pointer;
             }
         }
+
+        .handles-container{
+            display: flex;
+            gap: 2rem;
+            flex-direction: row;
+        }
     }
     @media ${devices.xs}{
         .navbarMobile-container{

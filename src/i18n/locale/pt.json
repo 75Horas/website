@@ -6,6 +6,8 @@
       "screenshots": "CAPTURAS",
       "enemies": "INIMIGOS",
       "store": "LOJA",
+      "contact": "CONTATO",
+      "collaborators": "COLABORADORES",
       "community": "COMUNIDADE",
       "btn_title": "COMPRE JÁ",
       "btn_subtitle": "ALFA DISPONÍVEL AGORA"
@@ -35,7 +37,7 @@
         "first": "Estar alerta a qualquer momento pode significar encontrar armas abandonadas.",
         "second": "Casas abandonada, servem de abrigo para Zumbis e animais selvagens.",
         "third": "À medida que a noite cai, tudo fica mais hostil, animais predadores costumam sair à noite.",
-        "fourth": "Estar alerta a qualquer momento pode significar encontrar armas abandonadas."
+        "fourth": "A variação ambiental entre essas regiões foi tão significativa que observamos mudanças climáticas marcantes, como tempestades de areia mais frequentes, temperaturas mais baixas na região de Sul, chegando até mesmo a nevar. Todos esses eventos causaram impactos na flora local."
       }
     },
     "store": {
