@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -34,4 +35,9 @@ body {
 
 strong {
   font-weight: normal;
+}
+
+::selection {
+  color: #fff;
+  background: #1B4242;
 }

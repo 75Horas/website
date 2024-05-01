@@ -6,7 +6,8 @@ export const Body_Enemies = styled.div`
 animation: ${fadeIn} 1s ease-in;
 
 width: 100%;
-height: 130vh;
+height: 90vh;
+/* height: 130vh; */
 cursor: default;
 
 border-bottom: 1px solid #000000;

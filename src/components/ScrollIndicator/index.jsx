@@ -18,10 +18,12 @@ export function ScrollIndicator({ id }) {
                     onClick={() => { handleScrollPage("screenshots") }} />
                 <div className={`indicator-ball ${id === "enemies" ? "active" : ""}`}
                     onClick={() => { handleScrollPage("enemies") }} />
-                <div className={`indicator-ball ${id === "community" ? "active" : ""}`}
-                    onClick={() => { handleScrollPage("community") }} />
                 <div className={`indicator-ball ${id === "store" ? "active" : ""}`}
                     onClick={() => { handleScrollPage("store") }} />
+                <div className={`indicator-ball ${id === "community" ? "active" : ""}`}
+                    onClick={() => { handleScrollPage("community") }} />
+                <div className={`indicator-ball ${id === "collaborators" ? "active" : ""}`}
+                    onClick={() => { handleScrollPage("collaborators") }} />
             </Container>
         </Body_ScrollIndicator>
     );

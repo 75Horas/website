@@ -29,6 +29,7 @@ width: 100%;
 
 .latest-updates-banner-container{
     position: relative;
+    max-height: 368px;
     /* width: 50%; */
 }
 

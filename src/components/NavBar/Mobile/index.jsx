@@ -67,9 +67,9 @@ export function NavBarMobile(props) {
                     <a className="link" onClick={() => handleScrollPage("screenshots")}>{t('navbar.screenshots')}</a>
                     <a className="link" onClick={() => handleScrollPage("enemies")}>{t('navbar.enemies')}</a>
                     <a className="link" onClick={() => handleScrollPage("store")}>{t('navbar.store')}</a>
-                    <a className="link" onClick={() => handleScrollPage("contact")}>{t('navbar.contact')}</a>
-                    <a className="link" onClick={() => handleScrollPage("collaborators")}>{t('navbar.collaborators')}</a>
                     <a className="link" onClick={() => handleScrollPage("community")}>{t('navbar.community')}</a>
+                    <a className="link" onClick={() => handleScrollPage("collaborators")}>{t('navbar.collaborators')}</a>
+                    <a className="link" onClick={() => handleScrollPage("contact")}>{t('navbar.contact')}</a>
 
                     <Container className="button-container">
                         <PreOrderButton title={t('navbar.btn_title')} subTitle={t('navbar.btn_subtitle')} />

@@ -34,8 +34,8 @@ function App() {
     setScrollPercentage(scrollPercentage);
 
     const id = scrollPercentage < 1 ? "home" : scrollPercentage < 5.5 ? "news"
-      : scrollPercentage < 8 ? "screenshots" : scrollPercentage < 11.5 ? "enemies"
-        : scrollPercentage < 14.5 ? "community" : "store";
+      : scrollPercentage < 8 ? "screenshots" : scrollPercentage < 11.0 ? "enemies"
+        : scrollPercentage < 13 ? "store" : scrollPercentage < 15.8 ? "community" : "collaborators";
     setPageId(id);
   };
 

@@ -9,7 +9,6 @@ margin: 0;
     display: flex;
     flex-direction: column;
     padding: 0;
-    /* justify-content: center; */
     
     max-width: 398px;
     width: 100%;
@@ -20,12 +19,12 @@ margin: 0;
 .banner-container{
     width: 100%;
     height: 100%;
-    /* max-height: 320px; */
     padding: 0;
 }
 .enemies-banner{
     width: 100%;
-    height: 100%;
+    height: 280px;
+    max-height: 100%;
 
     object-fit: cover;
     border: 1px solid rgba(255, 255, 255, 0.443) ;
@@ -33,9 +32,12 @@ margin: 0;
 }
 .details-container{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     gap: 1rem;
     padding: 0.4rem 1rem;
+
+    height: 100%;
 
     background-color: rgba(32, 32, 32, 0.69);
     border: 1px solid rgba(255, 255, 255, 0.443) ;

@@ -11,6 +11,7 @@ width: 100%;
 }
 
 .update-banner-container{
+    max-height: 120px;
     width: 30%;
 }
 .update-banner{

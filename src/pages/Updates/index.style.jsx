@@ -31,7 +31,7 @@ border-bottom: 1px solid #000000;
     bottom: 0;
     padding: 0;
 
-    gap: 2rem;
+    gap: 1rem;
 
     align-items: center;
     justify-content: center;

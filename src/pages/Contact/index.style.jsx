@@ -5,7 +5,7 @@ width: 100%;
 padding: 2rem 0;
 .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .informations{
@@ -13,6 +13,6 @@ padding: 2rem 0;
 }
 .logo{
     max-width: 100%;
-    width: 512px;
+    width: 312px;
 }
 `;
