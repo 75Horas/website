@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Body_InfiniteLooper = styled.div`
   position: relative;
+  /* width: 100%; */
+
+  opacity: 0.5;
 .looper {
   width: 100%;
   overflow: hidden;
@@ -14,6 +17,7 @@ export const Body_InfiniteLooper = styled.div`
 }
 
 .gradient{
+  pointer-events: none;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -29,7 +33,6 @@ export const Body_InfiniteLooper = styled.div`
 }
 
 .looper__listInstance {
-  display: flex;
   width: max-content;
 
   gap: 1rem;

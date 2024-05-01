@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { fadeIn, pulse, slideLeft, slideRight } from "../../animations";
 import { devices } from "../../js/Breakpoints"
 
+import thumbnail from "/assets/images/thumbnails/home_thumbnail.webp"
+
 export const Body_Home = styled.div`
 animation: ${fadeIn} 1s ease-in;
 
@@ -9,16 +11,13 @@ width: 100%;
 height: 100vh;
 cursor: default;
 
-border-bottom: 1px solid #000000;
+background-image: url(${thumbnail});
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 
-.parallax{
-    height: 100%;
-}
-.thumbnail{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+border-bottom: 1px solid #000000;
 
 .logo{
     max-width: 100%;
@@ -108,8 +107,7 @@ border-bottom: 1px solid #000000;
     align-items: center;
     
     position: relative;
-    animation: ${slideLeft} 0.5s ease-in, ${fadeIn} 0.5s ease-in;
-    animation: ${pulse} 3s linear infinite;
+    animation: ${slideLeft} 0.5s ease-in, ${fadeIn} 0.5s ease-in, ${pulse} 3s linear infinite;
 
     transition: color 0.5s;
 }

@@ -10,11 +10,14 @@ display: none;
 }
 .banner-container{
     position: relative;
+    height: 100%;
     max-height: 430px;
 }
 .update-banner{
     width: 100%;
-    object-fit: contain;
+    min-height: 430px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .details-container{

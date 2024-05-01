@@ -1,32 +1,24 @@
 import styled from "styled-components";
 import { fadeIn } from "../../animations";
 import { devices } from "../../js/Breakpoints";
+import thumbnail from "/assets/images/thumbnails/updates_thumbnail.webp"
 
 export const Body_Enemies = styled.div`
 animation: ${fadeIn} 1s ease-in;
 
 width: 100%;
-height: 90vh;
-/* height: 130vh; */
+height: 100%;
 cursor: default;
+
+background-image: url(${thumbnail});
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 
 border-bottom: 1px solid #000000;
 
-.parallax{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.banner{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    filter: blur(6px);
-}
 .contents-container{
-    position: absolute;
-    
     height: 100%;
 }
 .contents{

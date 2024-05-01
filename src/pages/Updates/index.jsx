@@ -1,7 +1,5 @@
-import thumbnail from "/assets/images/thumbnails/updates_thumbnail.webp"
 import { Body_Updates } from "./index.style";
 import { Container, Image } from "react-bootstrap";
-import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import { UpdateCard } from "../../components/Updates";
 import { useEffect, useState } from "react";
 import { Twitter } from "../../components/Twitters";
@@ -35,40 +33,27 @@ export function Updates() {
 
     return (
         <Body_Updates id="news">
-            <ParallaxBanner className="parallax">
-                <ParallaxBannerLayer
-                    speed={-60}
-                    expanded={false}
-                    className="parallax-banner"
-                >
-                    <Image
-                        className="banner"
-                        src={thumbnail}
-                        alt={thumbnail}
-                        loading="lazy"
-                    />
-                </ParallaxBannerLayer>
-                <Container className="contents-container">
-                    <div className="latest-updates">
-                        {updates ? (<LatestUpdateCard latestUpdate={latestUpdate} updates={updates} />) : <></>}
-                    </div>
-                    <div className="latest-updates-carousel">
-                        {updates ? (<LatestUpdatesCarusel updates={updates} />) : <></>}
-                    </div>
 
-                    <div className="all-updates-container">
-                        <div className="updates">
-                            <div className="updates-tag">{t('news.updates')}</div>
-                            <div className="all-updates">
-                                {updates && updates.slice(-5).map(item => (
-                                    <UpdateCard key={item.id} update={item} />
-                                ))}
-                            </div>
+            <Container className="contents-container">
+                <div className="latest-updates">
+                    {updates ? (<LatestUpdateCard latestUpdate={latestUpdate} updates={updates} />) : <></>}
+                </div>
+                <div className="latest-updates-carousel">
+                    {updates ? (<LatestUpdatesCarusel updates={updates} />) : <></>}
+                </div>
+
+                <div className="all-updates-container">
+                    <div className="updates">
+                        <div className="updates-tag">{t('news.updates')}</div>
+                        <div className="all-updates">
+                            {updates && updates.slice(-5).map(item => (
+                                <UpdateCard key={item.id} update={item} />
+                            ))}
                         </div>
-                        <Twitter />
                     </div>
-                </Container>
-            </ParallaxBanner>
-        </Body_Updates>
+                    <Twitter />
+                </div>
+            </Container>
+        </Body_Updates >
     )
 }

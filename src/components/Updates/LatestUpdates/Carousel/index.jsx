@@ -5,7 +5,7 @@ import { Body_Carousel } from './index.style';
 function LatestUpdatesCarusel({ updates }) {
     return (
         <Body_Carousel>
-            <Carousel>
+            <Carousel controls={false}>
                 {updates.slice(0, 5).map((update, index) => (
                     <Carousel.Item key={index} interval={5000}>
                         <div className="banner-container">
@@ -26,7 +26,6 @@ function LatestUpdatesCarusel({ updates }) {
                                 </div>
                             </div>
                         </div>
-
                     </Carousel.Item>
                 ))}
             </Carousel>

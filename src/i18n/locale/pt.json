@@ -45,6 +45,14 @@
       "description": "Descubra o merchandise oficial do DayZ: T-shirts, sweatshirts com capuz e muito mais",
       "btn_title": "LOJA"
     },
-    "community": {}
+    "community": {},
+    "collaborators": {
+      "title": "COLABORADORES"
+    },
+    "contact": {
+      "title": "Entre em contato!",
+      "subtitle": "Dúvidas, seguestões ou reportagens?",
+      "btn_title": "CONTATAR"
+    }
   }
 }

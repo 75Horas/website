@@ -9,7 +9,9 @@ export function Screenshots() {
         <Body_Screenshots id="screenshots">
             <Container fluid className="screenshots-containers">
                 <p className="screenshot-tag">{t('screenshots.page_title')}</p>
-                <ScreenshotsCaroulse />
+                {/* <div className="carousel-container"> */}
+                    <ScreenshotsCaroulse />
+                {/* </div> */}
             </Container>
         </Body_Screenshots>
     )

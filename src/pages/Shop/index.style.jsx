@@ -8,6 +8,8 @@ export const Body_Store = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    padding: 1rem 0;
+    
     border-bottom: 1px solid #000000;
     .contents-container{
         background-image: url(${thumbnail});

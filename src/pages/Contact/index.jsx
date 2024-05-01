@@ -4,8 +4,11 @@ import { Body_Contact } from "./index.style";
 import logo from "/assets/icons/logo_white_02.webp"
 import { useState } from "react";
 import { Email } from "../../components/Email";
+import { useTranslation } from "react-i18next";
 
 export function Contact() {
+    const { t } = useTranslation();
+
     const [messageType, setMessageType] = useState("");
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
@@ -20,8 +23,8 @@ export function Contact() {
             <Container>
                 <div>
                     <div className="informations">
-                        <p>Contact us!</p>
-                        <h3>Questions, suggestions or reports?</h3>
+                        <p>{t('contact.title')}</p>
+                        <h3>{t('contact.subtitle')}</h3>
                     </div>
 
                     <Image
@@ -32,9 +35,9 @@ export function Contact() {
                         className="logo"
                     />
                 </div>
-                
-                <Button variant="primary" type="submit" onClick={handleShow}>Submit</Button>
+
                 <Email show={show} setShow={setShow} />
+                <Button variant="primary" type="submit" onClick={handleShow}>{t('contact.btn_title')}</Button>
             </Container>
 
         </Body_Contact >

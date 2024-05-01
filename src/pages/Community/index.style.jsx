@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { fadeIn } from "../../animations";
 import { devices } from "../../js/Breakpoints"
 
+import thumbnail from "/assets/images/thumbnails/community_thumbnail.webp"
+
 export const Body_Community = styled.div`
 animation: ${fadeIn} 1s ease-in;
 
@@ -10,27 +12,20 @@ height: 100vh;
 
 border-bottom: 1px solid #000000;
 
-.parallax{height: 100%;}
-.thumbnail{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-
-    opacity: 0.5;
-}
+background-image: url(${thumbnail});
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 
 .contents-container{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
     display: flex;
     align-items: center;
 
     padding: 4rem 0;
     width: 100%;
+    height: 100%;
+}
 
     .contents{
         display: flex;
@@ -70,13 +65,9 @@ border-bottom: 1px solid #000000;
     .twitter-icon:hover{color:#1DA1F2}
     .instagram-icon:hover{color:#C13584}
     .youtube-icon:hover{color: #FF0000}
-}
 
 .scrollball{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    margin-top: -4rem;
 }
 
 @media ${devices.md}{
@@ -85,10 +76,6 @@ border-bottom: 1px solid #000000;
         max-width: 356px;
     }
     p{font-size: 1.4rem;}
-    }
-    .icon{
-        height: 42px;
-        width: 42px;
     }
 }
 
@@ -99,10 +86,6 @@ border-bottom: 1px solid #000000;
     }
     p{font-size: 1.2rem;}
     }
-    .icon{
-        height: 36px;
-        width: 36px;
-    }
 }
 @media ${devices.xs}{
     .contents-container{
@@ -110,10 +93,6 @@ border-bottom: 1px solid #000000;
         max-width: 156px;
     }
     p{font-size: 1rem;}
-    }
-    .icon{
-        height: 28px;
-        width: 28px;
     }
 }
 

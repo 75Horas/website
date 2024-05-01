@@ -1,40 +1,32 @@
 import styled from "styled-components";
-import { fadeIn } from "../../animations";
+import { fadeIn, slideUp } from "../../animations";
 import { devices } from "../../js/Breakpoints";
+import thumbnail from "/assets/images/thumbnails/updates_thumbnail.webp"
 
 export const Body_Updates = styled.div`
 animation: ${fadeIn} 1s ease-in;
 
+min-height: 100vh;
 width: 100%;
-height: 145vh;
 cursor: default;
+
+background-image: url(${thumbnail});
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 
 border-bottom: 1px solid #000000;
 
-.parallax{
-    display: flex;
-    height: 100%;
-    justify-content: center;
-}
-.banner{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
 .contents-container{
+animation: ${fadeIn} 1s ease-in, ${slideUp} 1s ease-in;
     display: flex;
     flex-direction: column;
-    position: absolute;
-
-    top: 0;
-    bottom: 0;
-    padding: 0;
+    align-items: center;
 
     gap: 1rem;
-
-    align-items: center;
-    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .all-updates-container{
@@ -42,8 +34,6 @@ border-bottom: 1px solid #000000;
     justify-content: center;
     width: 100%;
     gap: 1rem;
-
-    margin-bottom: 2rem;
 }
 
 .updates{
@@ -81,13 +71,9 @@ border-bottom: 1px solid #000000;
 }
 
 @media ${devices.md}{
-    height: 180vh;
     .all-updates-container{
         flex-direction: column;
     }
-}
-@media ${devices.sm}{
-    height: 170vh;
 }
 @media ${devices.xs}{
     .contents-container{

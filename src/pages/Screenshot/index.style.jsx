@@ -6,7 +6,6 @@ export const Body_Screenshots = styled.div`
     animation: ${fadeIn} 1s ease-in;
 
     width: 100%;
-    height: 80vh;
 
     display: flex;
     flex-direction: column;
@@ -17,7 +16,8 @@ export const Body_Screenshots = styled.div`
     border-bottom: 1px solid #000000;
 
     .screenshots-containers{
-        height: 70%;
+        padding: 2rem 0;
+        max-height: 600px;
         display: flex;
         
         justify-content: center;
@@ -38,15 +38,6 @@ export const Body_Screenshots = styled.div`
 
         background-color: #1B4242;
     }
-    
-    .col{
-        height: 100%;
-    }
-    .row,.col{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
     @media ${devices.md}{
         .title{font-size: 1.8rem;}
         .screenshot-tag{font-size: 1.2rem;}
@@ -55,6 +46,5 @@ export const Body_Screenshots = styled.div`
     @media ${devices.sm}{
         .title{font-size: 1.6rem;}
         .screenshot-tag{font-size: 1rem;}
-        height: 60vh;
     }
 `;

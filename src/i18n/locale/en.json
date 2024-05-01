@@ -45,6 +45,14 @@
       "description": "Discover the official DayZ merchandise: T-shirts, hoodies and more",
       "btn_title": "STORE"
     },
-    "community": {}
+    "community": {},
+    "collaborators": {
+      "title": "COLLABORATORS"
+    },
+    "contact": {
+      "title": "Contact us!",
+      "subtitle": "Questions, suggestions or reports?",
+      "btn_title": "CONTACT"
+    }
   }
 }

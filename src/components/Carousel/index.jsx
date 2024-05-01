@@ -1,5 +1,4 @@
 import screenshot01 from "/assets/images/thumbnails/community_thumbnail.webp"
-import screenshot02 from "/assets/images/thumbnails/home_thumbnail.webp"
 import screenshot03 from "/assets/images/thumbnails/updates_thumbnail.webp"
 import screenshot04 from "/assets/images/thumbnails/ultrawide.webp"
 import screenshot05 from "/assets/images/thumbnails/community_thumbnail.webp"
@@ -14,9 +13,6 @@ function ScreenshotsCaroulse() {
             <Carousel fade controls={false} indicators={false} >
                 <Carousel.Item interval={1200}>
                     <Image src={screenshot01} alt={screenshot01} className='screenshot' draggable={false} loading="lazy" />
-                </Carousel.Item>
-                <Carousel.Item interval={1200}>
-                    <Image src={screenshot02} alt={screenshot02} className='screenshot' draggable={false} loading="lazy" />
                 </Carousel.Item>
                 <Carousel.Item interval={1200}>
                     <Image src={screenshot03} alt={screenshot03} className='screenshot' draggable={false} loading="lazy" />

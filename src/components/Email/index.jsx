@@ -36,7 +36,6 @@ export function Email({ show, setShow }) {
                         <FloatingLabel
                             controlId="floatingInput"
                             label="Email address"
-
                         >
                             <Form.Control type="email" placeholder="name@example.com" />
                         </FloatingLabel>
