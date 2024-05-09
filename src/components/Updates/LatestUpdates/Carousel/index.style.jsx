@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { devices } from "../../../../js/Breakpoints";
 
 export const Body_Carousel = styled.div`
-
 display: none;
 
 .carousel{

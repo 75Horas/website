@@ -5,7 +5,7 @@ import { handleOpenWebsite } from "../../js/handles";
 
 export function StyledButton({ title, ...rest }) {
     return (
-        <DefaultButton {...rest}>
+        <DefaultButton {...rest} >
             <FaDiscord
                 size={"32px"}
                 className="icon"

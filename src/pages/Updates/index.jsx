@@ -18,12 +18,12 @@ export function Updates() {
                 const response = await axios.get("https://75hid-api-production.up.railway.app/updates");
                 const data = await response.data
 
-                data.forEach(update => {
-                    // update.bannerData = update.banner;
-                    // delete update.banner;
-                });
-                setUpdates(data);
-                setLatestUpdates(data[0])
+                // data.forEach(update => {
+                // update.bannerData = update.banner;
+                // delete update.banner;
+                // });
+                setUpdates(data.slice().reverse());
+                setLatestUpdates(data.pop())
             } catch (err) {
                 console.error(err);
             }
@@ -33,13 +33,14 @@ export function Updates() {
 
     return (
         <Body_Updates id="news">
-
             <Container className="contents-container">
-                <div className="latest-updates">
-                    {updates ? (<LatestUpdateCard latestUpdate={latestUpdate} updates={updates} />) : <></>}
-                </div>
-                <div className="latest-updates-carousel">
-                    {updates ? (<LatestUpdatesCarusel updates={updates} />) : <></>}
+                <div className="latest-container">
+                    <div className="latest-updates">
+                        {updates ? (<LatestUpdateCard latestUpdate={latestUpdate} updates={updates} />) : <></>}
+                    </div>
+                    <div className="latest-updates-carousel">
+                        {updates ? (<LatestUpdatesCarusel updates={updates} />) : <></>}
+                    </div>
                 </div>
 
                 <div className="all-updates-container">

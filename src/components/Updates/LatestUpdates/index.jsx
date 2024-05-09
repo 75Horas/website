@@ -32,15 +32,7 @@ export function LatestUpdateCard({ latestUpdate, updates }) {
                         </div>
                     </div>
                 </div>
-                <div className="others-details">
-                    {updates && updates.slice(0, 3).map(item => (
-                        <div key={item.id} className="other-detail" onClick={() => handleOpenTwitter(item.url)}>
-                            <h1 className="others-details-title">{item.title}</h1>
-                            <strong>{item.description}</strong>
-                            <p>{item.date}</p>
-                        </div>
-                    ))}
-                </div>
+
             </Container>
         </Body_LatestUpdateCard>
     )

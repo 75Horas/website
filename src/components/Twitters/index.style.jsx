@@ -5,6 +5,7 @@ export const Body_Twitter = styled.div`
 
 background-color: #000000;
 border-radius: 6px 6px 0 0;
+width: 40%;
 
 .twitter-timeline{
     overflow: hidden;
@@ -36,6 +37,7 @@ border-radius: 6px 6px 0 0;
 }
 
 @media ${devices.md}{
+        width: 100%;
     .twitter-header{
         justify-content: space-between;
     }

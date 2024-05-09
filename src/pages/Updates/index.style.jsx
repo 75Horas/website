@@ -19,7 +19,7 @@ background-size: cover;
 border-bottom: 1px solid #000000;
 
 .contents-container{
-animation: ${fadeIn} 1s ease-in, ${slideUp} 1s ease-in;
+    animation: ${fadeIn} 1s ease-in, ${slideUp} 1s ease-in;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +29,12 @@ animation: ${fadeIn} 1s ease-in, ${slideUp} 1s ease-in;
     margin-bottom: 1rem;
 }
 
+.latest-container{
+    min-height: 368px;
+    height: 100%;
+    width: 100%;
+    background-color: #092635;
+}
 .all-updates-container{
     display: flex;
     justify-content: center;
@@ -66,6 +72,9 @@ animation: ${fadeIn} 1s ease-in, ${slideUp} 1s ease-in;
     flex-direction: column;
     overflow-y: auto;
     gap: 1rem;
+
+    min-height: 60vh;
+    height:100%;
 
     padding: 6rem 1rem 2rem 1rem;
 }

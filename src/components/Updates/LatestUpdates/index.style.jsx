@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { devices } from "../../../js/Breakpoints";
 
 export const Body_LatestUpdateCard = styled.div`
-
 width: 100%;
 
 .latest-updates-tag{
@@ -62,28 +61,15 @@ width: 100%;
     background-color: #000000b0;
 }
 .details{
+    min-width: 45%;
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
     padding-bottom: 1rem;
     line-height: 1.4rem;
 }
-.others-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1rem;
-}
-.other-detail{
-    margin-bottom: 0.4rem;
-    border-bottom: 2px solid #9EC8B9;
-}
-.others-details-title{
-    font-size: 1.6rem;
-}
 @media ${devices.md}{
-    display: none;
+    /* display: none; */
 }
 
 `;

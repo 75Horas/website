@@ -63,49 +63,49 @@ function App() {
 
   return (
     <Container fluid>
-      {/* {isloading ? (
-          <Loading setIsLoading={setIsLoading} handleToggleSong={handleToggleSong} isloading={isloading} />
-        ) :
-          ( */}
-      <Container fluid className='pages-container'>
+      {isloading ? (
+        <Loading setIsLoading={setIsLoading} handleToggleSong={handleToggleSong} isloading={isloading} />
+      ) :
+        (
+          <Container fluid className='pages-container'>
 
-        <NavBar
-          handleLanguage={handleChangeLanguage}
-          language={currentLanguage}
-          handleToggleSong={handleToggleSong}
-          playing={playing}
-        />
-        <ScrollIndicator id={pageId} />
-        <section>
-          <Home />
-        </section>
-        <section>
-          <Updates />
-        </section>
-        <section>
-          <Screenshots />
-        </section>
-        <section>
-          <Enemies />
-        </section>
-        <section>
-          <Store />
-        </section>
-        <section>
-          <Community />
-        </section>
-        <section>
-          <Collaborators />
-        </section>
-        <section>
-          <Contact />
-        </section>
-        <section>
-          <Footer />
-        </section>
+            <NavBar
+              handleLanguage={handleChangeLanguage}
+              language={currentLanguage}
+              handleToggleSong={handleToggleSong}
+              playing={playing}
+            />
+            <ScrollIndicator id={pageId} />
+            <section>
+              <Home />
+            </section>
+            <section>
+              <Updates />
+            </section>
+            <section>
+              <Screenshots />
+            </section>
+            <section>
+              <Enemies />
+            </section>
+            <section>
+              <Store />
+            </section>
+            <section>
+              <Community />
+            </section>
+            <section>
+              <Collaborators />
+            </section>
+            <section>
+              <Contact />
+            </section>
+            <section>
+              <Footer />
+            </section>
 
-      </Container>
-      {/* )} */}
+          </Container>
+        )}
     </Container>
   )
 }

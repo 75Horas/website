@@ -94,6 +94,10 @@ background-size: cover;
     }
     p{font-size: 1rem;}
     }
+    .icons-container{
+        gap: 1rem;
+    }
+
 }
 
 `;
