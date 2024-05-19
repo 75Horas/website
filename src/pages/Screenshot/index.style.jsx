@@ -37,6 +37,7 @@ export const Body_Screenshots = styled.div`
         letter-spacing: 2px;
 
         background-color: #1B4242;
+        text-shadow: 2px 2px 6px rgba(36,36,36,0.79);
     }
     @media ${devices.md}{
         .title{font-size: 1.8rem;}

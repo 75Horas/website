@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import thumbnail from '/assets/images/thumbnails/store_thumbnail.webp'
+// import thumbnail from '/assets/images/thumbnails/store_background.webp'
 import { devices } from "../../js/Breakpoints";
 
 export const Body_Store = styled.div`
@@ -46,7 +47,7 @@ export const Body_Store = styled.div`
     }
 
     .store-items{
-        width: 60%;
+        width: 50%;
         height: 100%;
     }
         

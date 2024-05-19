@@ -7,7 +7,7 @@ padding: 2rem 0;
 .container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;;
 }
 .informations{
     line-height: 1px;

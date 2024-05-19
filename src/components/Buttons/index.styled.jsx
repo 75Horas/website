@@ -73,6 +73,7 @@ export const Body_PreOrderButton = styled(DefaultButton)`
         z-index: 1;
         margin: 0;
         font-size: 1rem;
+        text-shadow: 2px 2px 6px rgba(36,36,36,0.79);
     }
     .subTitle{
         z-index: 1;
@@ -141,7 +142,10 @@ export const Body_StoreButton = styled(DefaultButton)`
     color: #FFFFFF;
     background-color: #242424;
     
-    .title{font-size: 1.8rem;}
+    .title{
+        text-shadow: 4px 4px 6px rgba(36,36,36,0.79);
+        font-size: 1.8rem;
+    }
     
     @media ${devices.md}{
         padding: 0.6rem 1.2rem;
@@ -153,5 +157,28 @@ export const Body_StoreButton = styled(DefaultButton)`
     }
     @media ${devices.xs}{
         .title{font-size: 1rem;}
+    }
+`;
+
+export const Body_ContactButton = styled(DefaultButton)`
+    display: flex;
+    text-align: center;
+    padding: 0.8rem 1.4rem;
+    
+    color: #FFFFFF;
+    background-color: #1B4242;
+    
+    .title{
+        font-size: 1.4rem;
+        text-shadow: 4px 4px 6px rgba(36,36,36,0.79);
+    }
+    
+    @media ${devices.md}{
+        padding: 0.6rem 1.2rem;
+        .title{font-size: 1.2rem;}
+    }
+    @media ${devices.sm}{
+        padding: 0.4rem 1rem;
+        .title{font-size: 1.4rem;}
     }
 `;

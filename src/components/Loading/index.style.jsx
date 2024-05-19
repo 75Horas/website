@@ -18,6 +18,10 @@ overflow: hidden;
     width: 100%;
     max-width: 300px;
 }
+.keyboard{
+    width: 52px;
+    height: 52px;
+}
 .loading{
     animation: ${pulse} 0.8s infinite;
 }

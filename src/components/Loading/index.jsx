@@ -2,6 +2,7 @@ import { Container, Image } from "react-bootstrap";
 import { Body_Loading } from "./index.style";
 
 import logo from "/assets/icons/logo.webp";
+import keyboard from "/assets/icons/keyboard.png";
 import { useEffect, useState } from "react";
 
 import { MdTouchApp } from "react-icons/md";
@@ -30,14 +31,14 @@ export function Loading(props) {
     return (
         <Body_Loading>
             <Container className={`logo-container ${loaded}`} onClick={() => { handleEnter() }}>
-                <Image src={logo} alt={logo} className="logo" />
+                <Image src={logo} alt={logo} className="logo" draggable={false} />
                 {loaded === "loading" ?
                     (
                         <></>
                     ) : (
                         <div className="press-container">
                             <MdTouchApp size={"28px"} className="mobile-icon" />
-                            <GiKeyboard size={"48px"} className="desktop-icon" />
+                            <Image src={keyboard} alt={keyboard} className="desktop-icon keyboard" draggable={false}/>
                         </div>
                     )
                 }

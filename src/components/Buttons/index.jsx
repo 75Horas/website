@@ -1,4 +1,4 @@
-import { Body_PreOrderButton, Body_StoreButton, Body_TwitterButton, DefaultButton } from "./index.styled";
+import { Body_ContactButton, Body_PreOrderButton, Body_StoreButton, Body_TwitterButton, DefaultButton } from "./index.styled";
 import { FaDiscord } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { handleOpenWebsite } from "../../js/handles";
@@ -46,5 +46,13 @@ export function StoreButton({ title }) {
         <Body_StoreButton>
             <h1 className="title">{title}</h1>
         </Body_StoreButton>
+    );
+}
+
+export function ContactButton({ title }) {
+    return (
+        <Body_ContactButton>
+            <h1 className="title">{title}</h1>
+        </Body_ContactButton>
     );
 }

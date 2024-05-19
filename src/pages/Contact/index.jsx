@@ -5,6 +5,7 @@ import logo from "/assets/icons/logo_white_02.webp"
 import { useState } from "react";
 import { Email } from "../../components/Email";
 import { useTranslation } from "react-i18next";
+import { ContactButton } from "../../components/Buttons";
 
 export function Contact() {
     const { t } = useTranslation();
@@ -37,7 +38,7 @@ export function Contact() {
                 </div>
 
                 <Email show={show} setShow={setShow} />
-                <Button variant="primary" type="submit" onClick={handleShow}>{t('contact.btn_title')}</Button>
+                <ContactButton title={t('contact.btn_title')}/>
             </Container>
 
         </Body_Contact >
